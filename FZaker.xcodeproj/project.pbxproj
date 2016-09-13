@@ -15,6 +15,7 @@
 		18C943B61D87A0D6001B2691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C943B41D87A0D6001B2691 /* LaunchScreen.storyboard */; };
 		18C943C11D87A0D6001B2691 /* FZakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C943C01D87A0D6001B2691 /* FZakerTests.m */; };
 		18C943CC1D87A0D6001B2691 /* FZakerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C943CB1D87A0D6001B2691 /* FZakerUITests.m */; };
+		18C943DC1D87A13D001B2691 /* FZakerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C943DB1D87A13D001B2691 /* FZakerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		18C943C71D87A0D6001B2691 /* FZakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FZakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C943CB1D87A0D6001B2691 /* FZakerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZakerUITests.m; sourceTree = "<group>"; };
 		18C943CD1D87A0D6001B2691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C943DA1D87A13D001B2691 /* FZakerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZakerView.h; sourceTree = "<group>"; };
+		18C943DB1D87A13D001B2691 /* FZakerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZakerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		18C943A51D87A0D6001B2691 /* FZaker */ = {
 			isa = PBXGroup;
 			children = (
+				18C943D91D87A12C001B2691 /* FZakerView */,
 				18C943A91D87A0D6001B2691 /* AppDelegate.h */,
 				18C943AA1D87A0D6001B2691 /* AppDelegate.m */,
 				18C943AC1D87A0D6001B2691 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				18C943CD1D87A0D6001B2691 /* Info.plist */,
 			);
 			path = FZakerUITests;
+			sourceTree = "<group>";
+		};
+		18C943D91D87A12C001B2691 /* FZakerView */ = {
+			isa = PBXGroup;
+			children = (
+				18C943DA1D87A13D001B2691 /* FZakerView.h */,
+				18C943DB1D87A13D001B2691 /* FZakerView.m */,
+			);
+			path = FZakerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C943AE1D87A0D6001B2691 /* ViewController.m in Sources */,
+				18C943DC1D87A13D001B2691 /* FZakerView.m in Sources */,
 				18C943AB1D87A0D6001B2691 /* AppDelegate.m in Sources */,
 				18C943A81D87A0D6001B2691 /* main.m in Sources */,
 			);
@@ -414,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FZaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Linitial.FZaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FZaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Linitial.FZaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
