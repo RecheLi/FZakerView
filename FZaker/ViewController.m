@@ -26,8 +26,8 @@
 }
 
 - (void)initFakeZakerView {
-    _fzakerView = [[FZakerView alloc] initWithFrame:CGRectMake(0, -self.view.bounds.size.height, self.view.bounds.size.width, self.view.bounds.size.height)];
-    _fzakerView.backgroundColor = [UIColor darkGrayColor];
+    _fzakerView = [[FZakerView alloc] initWithFrame:CGRectMake(0, -self.view.bounds.size.height+1, self.view.bounds.size.width+1, self.view.bounds.size.height+1) referenceView:self.view];
+    _fzakerView.backgroundColor = [UIColor colorWithRed:69/255.0 green:60/255.0 blue:76/255.0 alpha:1.0];
     _fzakerView.userInteractionEnabled = YES;
     [self.view addSubview:_fzakerView];
     
@@ -49,7 +49,7 @@
 
 - (void)drop {
     [UIView animateWithDuration:0.34 animations:^{
-        _fzakerView.frame = CGRectMake(0, -self.view.bounds.size.height, [UIScreen mainScreen].bounds.size.width, self.view.bounds.size.height);
+        _fzakerView.frame = CGRectMake(0, -self.view.bounds.size.height+1, [UIScreen mainScreen].bounds.size.width+1, self.view.bounds.size.height+1);
     }];
     [_fzakerView configBehavior];
 }

@@ -10,6 +10,12 @@
 
 @interface FZakerView : UIImageView
 
+@property (nonatomic, strong) UIView *referenceView;
+
+@property (nonatomic, assign) CGRect originRect;
+
+- (instancetype)initWithFrame:(CGRect)frame referenceView:(UIView *)view;
+
 - (void)configBehavior;
 
 @end
